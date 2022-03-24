@@ -6,6 +6,7 @@ let armRight;
 let armLeft;
 let antena = 0;
 let ball = 0;
+let value = 0;
 
 function setup() {
   createCanvas(720, 480);  //do not touch!
@@ -13,6 +14,8 @@ function setup() {
   ellipseMode(RADIUS);
 }
 function draw() {
+  fill(value);
+  rect(25, 25, 50, 50);
   background('blue');
   fill('white')
   ellipse(100,50,50,30);
@@ -72,5 +75,12 @@ function mouseClicked() {
 }
 else {
   ball = ellipse(260, 200, 15, 14);
+  }
 }
+function mousePressed() {
+  if (value === 0) {
+    value = 255;
+  } else {
+    value = 0;
+  }
 }
