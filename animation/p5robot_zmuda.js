@@ -66,7 +66,7 @@ function draw() {
   //ellipse(305, 162, 3, 3); // Small eye 3
 }
 
-function mouseClicked() {
+function mousePressed() {
   if (ball === 0) {
   ball = ellipse(160, 250, 5, 15);
 } else {
