@@ -56,7 +56,7 @@ function draw() {
   fill(255); // Set fill to white
   ellipse(260, 200, 14, 14); // Large eye
   fill(0); // Set fill to black
-  ball =ellipse(260, 200, 3, 3); // Pupil
+  ball = ellipse(260, 200, 3, 3); // Pupil
   fill('green'); // Set fill to light gray
   ellipse(260, 120, 5, 5); // Small eye 1
   fill('green')
@@ -68,9 +68,8 @@ function draw() {
 
 function mouseClicked() {
   if (ball === 0) {
-  ball = ellipse(160, 200, 15, 15);
-}
-else {
+  ball = ellipse(160, 250, 5, 15);
+} else {
   ball = ellipse(260, 200, 15, 14);
-}
+  }
 }
