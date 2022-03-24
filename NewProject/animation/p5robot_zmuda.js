@@ -77,10 +77,3 @@ else {
   ball = ellipse(260, 200, 15, 14);
   }
 }
-function mousePressed() {
-  if (value === 0) {
-    value = 255;
-  } else {
-    value = 0;
-  }
-}
