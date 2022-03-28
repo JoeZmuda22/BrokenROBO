@@ -92,19 +92,3 @@ else {
   armRight = line(330,260,300,310);
 }
 }
-  if
-(keyIsDown(LEFT_ARROW)) {
-    foot1 x -= 5;
-  }
-  if
-(keyIsDown(RIGHT_ARROW)) {
-    foot1 x += 5;
-  }
-  if
-(keyIsDown(UP_ARROW)) {
-    foot1  y -= 5;
-  }
-  if
-(keyIsDown(DOWN_ARROW)) {
-      foot1  y += 5;
-  }
