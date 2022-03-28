@@ -105,4 +105,3 @@ else {
 (keyIsDown(DOWN_ARROW)) {
       foot1  y += 5;
   }
-}
