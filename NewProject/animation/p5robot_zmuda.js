@@ -2,7 +2,7 @@
 // CHANGE the digits themselves, the 2d shape-type, the number of those shapes, where/how they relate to everyother
 //DO NOT CHANGE the stuff in the setup related to the Canvas
 let shoe = 26;
-let armRight 0;
+let armRight = 0;
 let armLeft = 0;
 let antena = 0;
 let ball = 0;
