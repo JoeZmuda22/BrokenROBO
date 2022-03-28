@@ -2,11 +2,12 @@
 // CHANGE the digits themselves, the 2d shape-type, the number of those shapes, where/how they relate to everyother
 //DO NOT CHANGE the stuff in the setup related to the Canvas
 let shoe = 26;
-let armRight;
-let armLeft;
+let armRight 0;
+let armLeft = 0;
 let antena = 0;
 let ball = 0;
-let value = 0;
+let foot1 = 0;
+let foot2 = 0;
 
 function setup() {
   createCanvas(720, 480);  //do not touch!
@@ -14,8 +15,6 @@ function setup() {
   ellipseMode(RADIUS);
 }
 function draw() {
-  fill(value);
-  rect(25, 25, 50, 50);
   background('blue');
   fill('white')
   ellipse(100,50,50,30);
@@ -48,8 +47,8 @@ function draw() {
   armRight = line(330,260,300,310);//right arm
   noStroke(); // Disable stroke
   fill(102); // Set fill to gray
-  ellipse(240, 377, 20, 20); // Antigravity orb 1
-  ellipse(288, 377, 20, 20); // Antigravity orb 2
+  foot1 = ellipse(240, 377, 20, 20); // Antigravity orb 1
+  foot2 = ellipse(288, 377, 20, 20); // Antigravity orb 2
   fill(0); // Set fill to black
   rect(219, 257, 90, 120); // Main body
   fill(102); // Set fill to gray
@@ -59,7 +58,7 @@ function draw() {
   fill(255); // Set fill to white
   ellipse(260, 200, 14, 14); // Large eye
   fill(0); // Set fill to black
-  ball =ellipse(260, 200, 3, 3); // Pupil
+  ball = ellipse(260, 200, 3, 3); // Pupil
   fill('green'); // Set fill to light gray
   ellipse(260, 120, 5, 5); // Small eye 1
   fill('green')
@@ -75,5 +74,33 @@ function mouseClicked() {
 }
 else {
   ball = ellipse(260, 200, 15, 14);
-  }
 }
+}
+function mouseClicked() {
+  if (armLeft === 0) {
+  armLeft = line(120,300,300,260);
+}
+else {
+  armLeft = line(220,300,200,260);
+}
+}
+function mouseClicked() {
+  if (armLeft === 0) {
+  armRight = line(130,260,200,310);
+}
+else {
+  armRight = line(330,260,300,310);
+}
+}
+(keyIsDown(LEFT_ARROW)) {
+    foot1 x -= 5;
+  }
+(keyIsDown(RIGHT_ARROW)) {
+    foot1 x += 5;
+  }
+(keyIsDown(UP_ARROW)) {
+    foot1  y -= 5;
+  }
+(keyIsDown(DOWN_ARROW)) {
+      foot1  y += 5;
+  }
